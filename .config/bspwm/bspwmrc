@@ -1,0 +1,51 @@
+#! /bin/sh
+
+# Autostarts
+sxhkd &
+dunst &
+flameshot &
+#pulseaudio --start &
+$HOME/.config/bspwm/xinput.sh
+$HOME/.config/polybar/launch.sh
+picom -b --config $HOME/.config/picom/picom.conf &
+/usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &
+
+
+# Cursor
+xsetroot -cursor_name left_ptr &
+
+# Keymap
+setxkbmap -layout us,ru -option grp:alt_shift_toggle &
+
+# Xresources
+[[ -f $HOME/.Xresources ]] && xrdb -merge -I$HOME ~/.Xresources &
+
+# Wallpaper
+$HOME/.fehbg
+
+# Bspc config
+bspc monitor -d 1 2 3 4 5 6 7 8 9
+
+bspc config border_width         2
+bspc config window_gap		 5
+bspc config split_ratio          0.50
+bspc config gapless_monocle      false
+
+bspc config focus_follows_pointer false
+bspc config auto_alternate true
+bspc config auto_cancel true
+
+bspc config normal_border_color "#44475a"
+bspc config focused_border_color "#8be9fd"
+bspc config active_border_color "#6272a4"
+bspc config presel_feedback_color "#6272a4"
+
+bspc config normal_frame_opacity 0.0
+
+#bspc rule -a Gimp desktop='^8' state=floating follow=on
+#bspc rule -a Chromium desktop='^2'
+#bspc rule -a mplayer2 state=floating
+#bspc rule -a Kupfer.py focus=on
+bspc rule -a Zathura state=tiled
+bspc rule -a mpv state=pseudo_tiled
+

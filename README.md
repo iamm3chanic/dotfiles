@@ -26,11 +26,12 @@
 - xtitle
 - sutils
 - fzf
+- numlockx
 
 ### Install with one command
 ```
 yay -S bspwm-git sxhkd-git feh polybar-git ranger xorg-xsetroot lxappearance w3m dmenu picom-ibhagwan-git st-luke-git multilockscreen-git thunar nerd-fonts-complete ttf-font-awesome flameshot dunst neovim ttf-weather-icons
-sudo pacman -S xdo xdotool xtitle sutils fzf xorg-xbacklight
+sudo pacman -Syu xdo xdotool xtitle sutils fzf xorg-xbacklight numlockx
 ```
 ### How to copy configs to raw Arch
 ```

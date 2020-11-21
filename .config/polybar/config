@@ -1,0 +1,246 @@
+[bar/fullbar]
+include-file = ~/.config/polybar/fullbar
+
+background = #bb282a36
+foreground = #f8f8f2
+
+modules-left = workspaces xkeyboard  
+modules-center = title
+modules-right = battery brightness separatordotted spacing volume wlan spacing separatordotted date powermenu 
+
+[module/xkeyboard]
+type = internal/xkeyboard
+
+blacklist-0 = num lock
+blacklist-1 = scroll lock
+
+format = <label-layout> <label-indicator>
+format-spacing = 0
+label-layout = %name%
+label-layout-padding = 2
+label-layout-background = #bc99ed
+label-layout-foreground = #000
+#label-indicator = %name%
+layout-icon-default = some-icon
+layout-icon-0 = ch;C
+layout-icon-1 = us;U
+indicator-icon-default = 
+indicator-icon-0 = caps lock;-CL;+CL
+indicator-icon-1 = scroll lock;;+SL
+indicator-icon-2 = num lock;-NL;+NL
+label-indicator-on = +%name%
+label-indicator-on-capslock = 
+label-indicator-off-capslock = 
+label-indicator-on-numlock = 
+label-indicator-off-numlock = 
+label-indicator-on-scrolllock = 
+label-indicator-off-scrolllock =
+label-indicator-off = -%name%
+
+#[module/memory]
+#type = internal/memory
+#internal = 1
+#format = <label>
+#label =   %mb_used%
+
+[module/battery]
+type = internal/battery
+
+full-at = 99
+
+battery = BAT1
+adapter = ACAD
+
+poll-interval = 5
+
+format-charging = <animation-charging>  <label-charging>
+format-discharging = <ramp-capacity>  <label-discharging>
+format-full = <ramp-capacity>  <label-full>
+label-charging = %percentage%%
+label-discharging = %percentage%%
+label-full = %percentage%%
+label = %percentage%%
+format-charging-padding = 3
+format-discharging-padding = 3
+format-full-padding = 3
+ramp-capacity-0 = 
+ramp-capacity-1 = 
+ramp-capacity-2 = 
+ramp-capacity-3 = 
+ramp-capacity-4 = 
+ramp-capacity-5 = 
+ramp-capacity-6 = 
+ramp-capacity-7 = 
+ramp-capacity-8 = 
+ramp-capacity-9 = 
+
+animation-charging-0 = 
+animation-charging-1 = 
+animation-charging-2 = 
+animation-charging-3 = 
+animation-charging-4 = 
+animation-charging-5 = 
+animation-charging-6 = 
+animation-charging-framerate = 750
+[module/cpu]
+type = internal/cpu
+internal = 0.5
+format =   <label>%
+label = %percentage%
+
+[module/date]
+type = internal/date
+interval = 60
+date = %a %d %b
+time = %l:%M %p
+
+label = %date% %time%
+format-padding = 1
+label-font = 3
+
+[module/brightness]
+type = internal/xbacklight
+
+format = <ramp>  <label>
+
+ramp-0 = 🌕
+ramp-1 = 🌔
+ramp-2 = 🌓
+ramp-3 = 🌒
+ramp-4 = 🌑
+label =  %percentage%%
+
+[module/volume]
+type = internal/pulseaudio
+
+#master-soundcard = hw:0
+#speaker-soundcard = hw:0
+#headphone-soundcard = hw:0
+
+headphone-mixer = Headphone
+headphone-id = 16
+
+mapping = true
+
+format-volume = <ramp-volume> <label-volume> 
+label-volume = %percentage%%
+
+label-muted =  muted
+label-muted-foreground = #666
+
+
+ramp-volume-0 = 
+ramp-volume-1 = 
+ramp-volume-2 = 
+
+ramp-volume-foreground = #9f78e1
+click-right = pavucontrol &
+
+[module/wlan]
+type = internal/network
+interface = wlan0
+interval = 3.0
+format-connected = <label-connected>
+format-connected-prefix = "  "
+label-connected = %downspeed:9%
+format-disconnected = <label-disconnected>
+label-disconnected = not connected
+format-padding = 1
+
+#[module/wifi]
+#type = internal/network
+#interface = wlp8s0
+
+[module/title]
+type = internal/xwindow
+format = <label>
+#label = %title:0:20:...%
+#label-maxlen = 20
+format-font = 3
+
+label-foreground = "#50fa7b"
+
+[module/notifications]
+type = custom/text
+content = 
+click-left = kill -s USR1 $(pidof deadd-notification-center)
+
+[module/separator]
+type = custom/text
+content =  
+content-padding = 0
+content-foreground = "#ff5555"
+
+[module/spacing]
+type = custom/text
+content = " " 
+content-padding = 0
+
+[module/separatordotted]
+type = custom/text
+content =  
+content-padding = 0
+content-foreground = "#ff5555"
+
+[module/powermenu]
+type = custom/menu
+
+label-open = 
+label-close = 
+
+expand-left = true
+
+menu-0-0 = Logout
+menu-0-0-exec = bspc quit
+menu-0-1 = Lock
+menu-0-1-exec = mantablockscreen -sc
+menu-0-2 =  Poweroff
+menu-0-2-exec = systemctl poweroff
+menu-0-3 =   Reboot
+menu-0-3-exec = systemctl reboot
+format-spacing = 1 
+format-padding = 2
+
+label-separator = |
+
+[module/workspaces]
+type = internal/bspwm
+pin-workspaces = false
+enable-click = true
+enable-scroll = true
+
+ws-icon-0 = 1;1: 
+ws-icon-1 = 2;2: 
+ws-icon-2 = 3;3: 
+ws-icon-3 = 4;4: 
+ws-icon-4 = 5;5: 
+ws-icon-5 = 6;6: 
+ws-icon-6 = 7;7: 
+ws-icon-7 = 8;8: 
+ws-icon-8 = 9;9: 
+ws-icon-default = 
+
+
+format = <label-state> <label-mode>
+
+label-monitor = %icon%
+
+label-focused = %icon%
+label-focused-padding = 2
+label-focused-background = "#bd93f9"
+label-focused-foreground = "#212121"
+
+label-occupied = %icon%
+label-occupied-padding = 2
+
+label-dimmed-foreground = #bd93f9
+label-dimmed-underline = #bd93f9
+;label-dimmed-focused-background = #212121
+
+label-urgent = %icon%
+label-urgent-foreground = "#ff5555"
+;label-urgent-background = "#212121"
+label-urgent-underline = "#ff5555"
+label-urgent-padding = 2
+
+label-empty =

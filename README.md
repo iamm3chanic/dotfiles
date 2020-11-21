@@ -41,6 +41,10 @@ cp -r dotfiles/.config/* ~/.config/*
 chmod +x ~/.config/bspwm/*
 chmod +x ~/.config/sxhkd/*
 chmod +x ~/.config/polybar/launch.sh
+mkdir -p Pictures
+mkdir -p Pictures/screenshot
+cp dotfiles/arch-pic-wall.jpg Pictures/
+cp dotfiles/.fehbg ~/
 #copy something... not forget about pictures
 ```
 ### Preview

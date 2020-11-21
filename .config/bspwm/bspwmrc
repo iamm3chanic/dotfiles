@@ -4,6 +4,7 @@
 sxhkd &
 dunst &
 flameshot &
+numlockx &
 #pulseaudio --start &
 $HOME/.config/bspwm/xinput.sh
 $HOME/.config/polybar/launch.sh

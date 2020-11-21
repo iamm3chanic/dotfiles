@@ -6,7 +6,7 @@ foreground = #f8f8f2
 
 modules-left = workspaces xkeyboard  
 modules-center = title
-modules-right = battery brightness separatordotted spacing volume wlan spacing separatordotted date powermenu 
+modules-right = battery wlan separatordotted spacing brightness spacing volume spacing separatordotted date powermenu 
 
 [module/xkeyboard]
 type = internal/xkeyboard
@@ -108,6 +108,7 @@ ramp-1 = 🌔
 ramp-2 = 🌓
 ramp-3 = 🌒
 ramp-4 = 🌑
+ramp-foreground = #9f78e1
 label =  %percentage%%
 
 [module/volume]
@@ -122,7 +123,7 @@ headphone-id = 16
 
 mapping = true
 
-format-volume = <ramp-volume> <label-volume> 
+format-volume = <ramp-volume>  <label-volume> 
 label-volume = %percentage%%
 
 label-muted =  muted

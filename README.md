@@ -30,8 +30,8 @@
 
 ### Install with one command
 ```
-yay -S bspwm-git sxhkd-git feh polybar-git ranger xorg-xsetroot lxappearance w3m dmenu picom-ibhagwan-git st-luke-git multilockscreen-git nerd-fonts-complete ttf-font-awesome flameshot dunst neovim ttf-weather-icons
-sudo pacman -Syu xdo xdotool xtitle sutils fzf xorg-xbacklight numlockx thunar
+yay -S bspwm-git sxhkd-git polybar-git ranger-git picom-ibhagwan-git st-luke-git multilockscreen-git nerd-fonts-complete ttf-weather-icons xtitle sutils 
+sudo pacman -Syu xdo xdotool fzf xorg-xbacklight numlockx thunar dunst neovim flameshot ttf-font-awesome feh xorg-xsetroot lxappearance w3m dmenu 
 ```
 ### How to copy configs to raw Arch
 ```

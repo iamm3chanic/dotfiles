@@ -1,4 +1,4 @@
-# Dotfiles for BSPWMxorg-xbacklight
+# Dotfiles for BSPWM
 ### Packages required:
 - bspwm
 - sxhkd

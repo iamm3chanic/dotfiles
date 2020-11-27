@@ -48,6 +48,7 @@ cp dotfiles/.fehbg ~/
 #copy something... not forget about pictures
 ```
 ### Preview
+![alt text](~/Pictures/screenshots/figures/2020-11-27_09-05.png) 
 
 ### Shortcuts
 COMMAND | MEANING

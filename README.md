@@ -49,6 +49,7 @@ cp dotfiles/.fehbg ~/
 ```
 ### Preview
 ![help menu](https://raw.githubusercontent.com/iamm3chanic/dotfiles/main/PREVIEW/help_menu.png) 
+![neofetch subl] (https://raw.githubusercontent.com/iamm3chanic/dotfiles/main/PREVIEW/neofetch.png)
 
 ### Shortcuts
 COMMAND | MEANING

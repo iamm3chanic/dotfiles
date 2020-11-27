@@ -42,13 +42,13 @@ chmod +x ~/.config/bspwm/*
 chmod +x ~/.config/sxhkd/*
 chmod +x ~/.config/polybar/launch.sh
 mkdir -p Pictures
-mkdir -p Pictures/screenshot
+mkdir -p Pictures/screenshots
 cp dotfiles/arch-pic-wall.jpg Pictures/
 cp dotfiles/.fehbg ~/
 #copy something... not forget about pictures
 ```
 ### Preview
-![alt text](/home/gott/Pictures/screenshots/2020-11-27_09-05.png) 
+![help menu](https://github.com/iamm3chanic/dotfiles/raw/master/PREVIEW/help_menu.png) 
 
 ### Shortcuts
 COMMAND | MEANING

@@ -43,12 +43,12 @@ chmod +x ~/.config/sxhkd/*
 chmod +x ~/.config/polybar/launch.sh
 mkdir -p Pictures
 mkdir -p Pictures/screenshots
-cp dotfiles/arch-pic-wall.jpg Pictures/
+cp dotfiles/PREVIEW/sarch-pic-wall.jpg Pictures/
 cp dotfiles/.fehbg ~/
 #copy something... not forget about pictures
 ```
 ### Preview
-![help menu](https://github.com/iamm3chanic/dotfiles/raw/master/PREVIEW/help_menu.png) 
+![help menu](https://raw.githubusercontent.com/iamm3chanic/dotfiles/main/PREVIEW/help_menu.png) 
 
 ### Shortcuts
 COMMAND | MEANING

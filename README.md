@@ -51,6 +51,8 @@ cp dotfiles/.fehbg ~/
 ```
 ### Preview
 ![help menu](https://raw.githubusercontent.com/iamm3chanic/dotfiles/main/PREVIEW/help_menu.png) 
+![neofetch float](https://raw.githubusercontent.com/iamm3chanic/dotfiles/main/PREVIEW/neo.png)
+![mc htop](https://raw.githubusercontent.com/iamm3chanic/dotfiles/main/PREVIEW/mc_htop.png)
 ![neofetch subl](https://raw.githubusercontent.com/iamm3chanic/dotfiles/main/PREVIEW/neofetch.png)
 
 ### Shortcuts

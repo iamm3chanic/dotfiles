@@ -29,11 +29,12 @@
 - numlockx
 - htop
 - sublime-text-3
+- evince
 
 ### Install with one command
 ```
 yay -S bspwm-git sxhkd-git polybar-git ranger-git picom-ibhagwan-git st-luke-git multilockscreen-git nerd-fonts-complete ttf-weather-icons xtitle sutils sublime-text-3
-sudo pacman -Syu xdo xdotool fzf xorg-xbacklight numlockx thunar dunst neovim flameshot ttf-font-awesome feh xorg-xsetroot lxappearance w3m dmenu htop
+sudo pacman -Syu xdo xdotool fzf xorg-xbacklight numlockx thunar dunst neovim flameshot ttf-font-awesome feh xorg-xsetroot lxappearance w3m dmenu htop evince
 ```
 ### How to copy configs to raw Arch
 ```
@@ -51,6 +52,7 @@ cp dotfiles/.fehbg ~/
 ```
 ### Preview
 ![help menu](https://raw.githubusercontent.com/iamm3chanic/dotfiles/main/PREVIEW/help_menu.png) 
+![ranger evince](https://raw.githubusercontent.com/iamm3chanic/dotfiles/main/PREVIEW/ranger_evince.png)
 ![neofetch float](https://raw.githubusercontent.com/iamm3chanic/dotfiles/main/PREVIEW/neo.png)
 ![mc htop](https://raw.githubusercontent.com/iamm3chanic/dotfiles/main/PREVIEW/mc_htop.png)
 ![neofetch subl](https://raw.githubusercontent.com/iamm3chanic/dotfiles/main/PREVIEW/neofetch.png)

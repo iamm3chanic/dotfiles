@@ -28,6 +28,7 @@
 - fzf
 - numlockx
 - htop
+- sublime-text-3
 
 ### Install with one command
 ```

@@ -30,11 +30,17 @@
 - htop
 - sublime-text-3
 - evince
+- thunar 
+- firefox
 
 ### Install with one command
 ```
-yay -S bspwm-git sxhkd-git polybar-git ranger-git picom-ibhagwan-git st-luke-git multilockscreen-git nerd-fonts-complete ttf-weather-icons xtitle sutils sublime-text-3
-sudo pacman -Syu xdo xdotool fzf xorg-xbacklight numlockx thunar dunst neovim flameshot ttf-font-awesome feh xorg-xsetroot lxappearance w3m dmenu htop evince
+yay -S polybar-git ranger-git picom-ibhagwan-git st-luke-git \
+multilockscreen-git nerd-fonts-complete ttf-weather-icons 
+xtitle sutils sublime-text-3
+sudo pacman -Syu bspwm sxhkd xdo xdotool fzf xorg-xbacklight \
+numlockx thunar dunst neovim flameshot ttf-font-awesome feh \
+xorg-xsetroot lxappearance w3m dmenu htop evince thunar firefox
 ```
 ### How to copy configs to raw Arch
 ```
@@ -48,7 +54,6 @@ mkdir -p Pictures
 mkdir -p Pictures/screenshots
 cp dotfiles/PREVIEW/sarch-pic-wall.jpg Pictures/
 cp dotfiles/.fehbg ~/
-#copy something... not forget about pictures
 ```
 ### Preview
 ![help menu](https://raw.githubusercontent.com/iamm3chanic/dotfiles/main/PREVIEW/help_menu.png) 

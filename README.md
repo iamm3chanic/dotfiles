@@ -52,7 +52,7 @@ chmod +x ~/.config/sxhkd/*
 chmod +x ~/.config/polybar/launch.sh
 mkdir -p Pictures
 mkdir -p Pictures/screenshots
-cp dotfiles/PREVIEW/sarch-pic-wall.jpg Pictures/
+cp dotfiles/PREVIEW/arch-pic-wall.jpg Pictures/
 cp dotfiles/.fehbg ~/
 ```
 ### Preview

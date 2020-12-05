@@ -108,3 +108,10 @@ super + alt + shift + {Left,Down,Up,Right}  |    # contract a window by moving o
 super + ctrl + {Left,Down,Up,Right}  |   # move a floating window
 super + F11  |   # hide node
 super + shift + F11  |   # unhide node
+
+### Possible issues
+#### 1. Polybar
+If you can't see battery icon on tray, edit ~/.config/polybar/config.
+
+#### 2. Bspwm
+Check if all configs are executable.

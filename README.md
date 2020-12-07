@@ -111,7 +111,15 @@ super + shift + F11  |   # unhide node
 
 ### Possible issues
 #### 1. Polybar
-If you can't see battery icon on tray, edit ~/.config/polybar/config.
+If you can't see battery, wi-fi or volume icon on tray, edit ~/.config/polybar/config.  
+Follow [Polybar Wiki](https://github.com/polybar/polybar/wiki/Configuration)
 
 #### 2. Bspwm
-Check if all configs are executable.
+Check if all configuration files are executable.
+
+#### 3. Sxhkd
+Make your own shortcuts in `~/.config/sxhkd/sxhkdrc` and don't forget to reload them! 
+```
+pkill -USR1 -x sxhkd
+```
+#### 4. Write to issues and explain what else is wrong :)

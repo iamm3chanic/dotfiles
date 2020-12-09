@@ -32,6 +32,7 @@
 - evince
 - thunar 
 - firefox
+- parole
 - cava
 
 ### Install with one command
@@ -39,9 +40,10 @@
 yay -S polybar-git ranger-git picom-ibhagwan-git st-luke-git \
 multilockscreen-git nerd-fonts-complete ttf-weather-icons 
 xtitle sutils sublime-text-3 cava
+
 sudo pacman -Syu bspwm sxhkd xdo xdotool fzf xorg-xbacklight \
 numlockx thunar dunst neovim flameshot ttf-font-awesome feh \
-xorg-xsetroot lxappearance w3m dmenu htop evince thunar firefox
+xorg-xsetroot lxappearance w3m dmenu htop evince thunar firefox parole
 ```
 ### How to copy configs to raw Arch
 ```

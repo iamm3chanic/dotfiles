@@ -32,12 +32,13 @@
 - evince
 - thunar 
 - firefox
+- cava
 
 ### Install with one command
 ```
 yay -S polybar-git ranger-git picom-ibhagwan-git st-luke-git \
 multilockscreen-git nerd-fonts-complete ttf-weather-icons 
-xtitle sutils sublime-text-3
+xtitle sutils sublime-text-3 cava
 sudo pacman -Syu bspwm sxhkd xdo xdotool fzf xorg-xbacklight \
 numlockx thunar dunst neovim flameshot ttf-font-awesome feh \
 xorg-xsetroot lxappearance w3m dmenu htop evince thunar firefox
@@ -54,12 +55,16 @@ mkdir -p Pictures
 mkdir -p Pictures/screenshots
 cp dotfiles/PREVIEW/arch-pic-wall.jpg Pictures/
 cp dotfiles/.fehbg ~/
+cp dotfiles/.Xresources ~/
+cp dotfiles/.xinitrc ~/
+chmod +x .xinitrc .Xresources .fehbg
 ```
 ### Preview
 ![help menu](https://raw.githubusercontent.com/iamm3chanic/dotfiles/main/PREVIEW/help_menu.png) 
 ![ranger evince](https://raw.githubusercontent.com/iamm3chanic/dotfiles/main/PREVIEW/ranger_evince.png)
 ![neofetch float](https://raw.githubusercontent.com/iamm3chanic/dotfiles/main/PREVIEW/neo.png)
-![mc htop](https://raw.githubusercontent.com/iamm3chanic/dotfiles/main/PREVIEW/mc_htop.png)
+![mc htop](https://raw.githubusercontent.com/iamm3chanic/dotfiles/main/PREVIEW/mc_htop.png)  
+![cava](https://raw.githubusercontent.com/iamm3chanic/dotfiles/main/PREVIEW/cava.png)
 ![neofetch subl](https://raw.githubusercontent.com/iamm3chanic/dotfiles/main/PREVIEW/neofetch.png)
 
 ### Shortcuts

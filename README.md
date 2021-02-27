@@ -34,6 +34,7 @@
 - firefox
 - parole
 - cava
+- conky
 
 ### Install with one command
 ```
@@ -43,16 +44,19 @@ xtitle sutils sublime-text-3 cava
 
 sudo pacman -Syu bspwm sxhkd xdo xdotool fzf xorg-xbacklight \
 numlockx thunar dunst neovim flameshot ttf-font-awesome feh \
-xorg-xsetroot lxappearance w3m dmenu htop evince thunar firefox parole
+xorg-xsetroot lxappearance w3m dmenu htop evince thunar \
+firefox parole conky
 ```
 ### How to copy configs to raw Arch
 ```
 cd
 git clone https://github.com/iamm3chanic/dotfiles
 cp -r dotfiles/.config/* ~/.config/*
+cp dotfiles/.conkyrc ~/.conkyrc
 chmod +x ~/.config/bspwm/*
 chmod +x ~/.config/sxhkd/*
 chmod +x ~/.config/polybar/launch.sh
+chmod +x ~/.conkyrc
 mkdir -p Pictures
 mkdir -p Pictures/screenshots
 cp dotfiles/PREVIEW/arch-pic-wall.jpg Pictures/

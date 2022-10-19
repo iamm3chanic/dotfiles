@@ -51,7 +51,7 @@ firefox parole conky
 ```
 cd
 git clone https://github.com/iamm3chanic/dotfiles
-cp -r dotfiles/.config/* ~/.config/*
+cp -r dotfiles/.config/* ~/.config/
 cp dotfiles/.conkyrc ~/.conkyrc
 chmod +x ~/.config/bspwm/*
 chmod +x ~/.config/sxhkd/*

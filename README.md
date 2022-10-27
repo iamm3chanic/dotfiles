@@ -13,7 +13,6 @@
 - dmenu
 - picom-ibhagwan-git
 - st-luke-git
-- multilockscreen-git
 - thunar
 - nerd-fonts-complete
 - ttf-font-awesome
@@ -24,11 +23,10 @@
 - xdo
 - xdotool
 - xtitle
-- sutils
 - fzf
 - numlockx
 - htop
-- sublime-text-3
+- sublime-text-4
 - evince
 - thunar 
 - firefox
@@ -39,13 +37,14 @@
 ### Install with one command
 ```
 yay -S polybar-git ranger-git picom-ibhagwan-git st-luke-git \
-multilockscreen-git nerd-fonts-complete ttf-weather-icons 
-xtitle sutils sublime-text-3 cava
+nerd-fonts-complete ttf-weather-icons xtitle sublime-text-4 \
+cava --noconfirm
+
 
 sudo pacman -Syu bspwm sxhkd xdo xdotool fzf xorg-xbacklight \
 numlockx thunar dunst neovim flameshot ttf-font-awesome feh \
 xorg-xsetroot lxappearance w3m dmenu htop evince thunar \
-firefox parole conky
+firefox parole conky --noconfirm
 ```
 ### How to copy configs to raw Arch
 ```
